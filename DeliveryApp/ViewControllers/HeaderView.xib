@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="U6b-Vx-4bR" customClass="HeaderView" customModule="DeliveryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="133"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzB-7i-6A4">
+                    <rect key="frame" x="0.0" y="0.0" width="385" height="133"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biU-c7-ucN">
+                            <rect key="frame" x="20" y="12" width="260" height="108"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="260" id="Jdh-Ex-po3"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="Popular Food Items">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="35" name="TrebuchetMS-Bold"/>
+                                        <font key="NSOriginalFont" size="37" name="TrebuchetMS"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="biU-c7-ucN" firstAttribute="top" secondItem="pzB-7i-6A4" secondAttribute="top" constant="12" id="5HA-xc-JM7"/>
+                        <constraint firstAttribute="bottom" secondItem="biU-c7-ucN" secondAttribute="bottom" constant="13" id="IMG-02-E9x"/>
+                        <constraint firstItem="biU-c7-ucN" firstAttribute="leading" secondItem="pzB-7i-6A4" secondAttribute="leading" constant="20" id="KpR-R0-Jzr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="pzB-7i-6A4" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="Rd9-0O-J8U"/>
+                <constraint firstItem="pzB-7i-6A4" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="VKb-7D-tn8"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="pzB-7i-6A4" secondAttribute="bottom" id="YIN-9c-zq0"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="pzB-7i-6A4" secondAttribute="trailing" id="d5g-0c-bmK"/>
+            </constraints>
+            <connections>
+                <outlet property="popularFoodLbl" destination="biU-c7-ucN" id="8uX-P4-Djk"/>
+                <outlet property="view" destination="pzB-7i-6A4" id="esJ-Ch-Lar"/>
+            </connections>
+            <point key="canvasLocation" x="3.6231884057971016" y="-18.415178571428569"/>
+        </collectionReusableView>
+    </objects>
+</document>

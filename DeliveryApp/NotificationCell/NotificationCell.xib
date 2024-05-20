@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="75" id="KGk-i7-Jjw" customClass="NotificationCell" customModule="DeliveryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ibo-nA-dDY">
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="75"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="companyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yr5-Ob-cF2">
+                                <rect key="frame" x="10" y="2.5" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="cbn-Wn-63A"/>
+                                    <constraint firstAttribute="width" constant="70" id="jh0-Pn-oAw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration Successfull" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0T-In-J0N">
+                                <rect key="frame" x="80" y="5" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FkS-zV-B8y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start ordering foods and enjoy your meal  sbhgdfhubvhj hgsdhvsd ygzschgsd hgsxc gyfvw" lineBreakMode="middleTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBK-OS-to3">
+                                <rect key="frame" x="80" y="35" width="298" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="R0T-In-J0N" secondAttribute="trailing" constant="20" id="5LD-Qn-rqO"/>
+                            <constraint firstItem="EBK-OS-to3" firstAttribute="leading" secondItem="yr5-Ob-cF2" secondAttribute="trailing" id="J8x-hl-Iha"/>
+                            <constraint firstItem="yr5-Ob-cF2" firstAttribute="leading" secondItem="Ibo-nA-dDY" secondAttribute="leading" constant="10" id="MqN-yv-jta"/>
+                            <constraint firstItem="R0T-In-J0N" firstAttribute="leading" secondItem="yr5-Ob-cF2" secondAttribute="trailing" id="Qdm-DD-Vmh"/>
+                            <constraint firstItem="EBK-OS-to3" firstAttribute="top" secondItem="R0T-In-J0N" secondAttribute="bottom" id="Vo8-3h-Biv"/>
+                            <constraint firstItem="yr5-Ob-cF2" firstAttribute="centerY" secondItem="Ibo-nA-dDY" secondAttribute="centerY" id="cQa-fw-6WW"/>
+                            <constraint firstItem="R0T-In-J0N" firstAttribute="top" secondItem="Ibo-nA-dDY" secondAttribute="top" constant="5" id="e1x-vI-PsS"/>
+                            <constraint firstAttribute="bottom" secondItem="EBK-OS-to3" secondAttribute="bottom" id="nxt-d9-9bJ"/>
+                            <constraint firstAttribute="trailing" secondItem="EBK-OS-to3" secondAttribute="trailing" constant="10" id="rGX-Li-UCN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ibo-nA-dDY" secondAttribute="trailing" id="Bq8-rH-2Fu"/>
+                    <constraint firstItem="Ibo-nA-dDY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Cdi-1l-Tdr"/>
+                    <constraint firstItem="Ibo-nA-dDY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Et3-mv-dQb"/>
+                    <constraint firstItem="Ibo-nA-dDY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Iam-dj-fYy"/>
+                    <constraint firstAttribute="bottom" secondItem="Ibo-nA-dDY" secondAttribute="bottom" id="cTE-gN-oLT"/>
+                    <constraint firstItem="Ibo-nA-dDY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iSd-sk-9c9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="DoneLbl" destination="R0T-In-J0N" id="0GO-mL-GDT"/>
+                <outlet property="aboutLbl" destination="EBK-OS-to3" id="2un-6Q-c6f"/>
+                <outlet property="companyLogoImgVw" destination="yr5-Ob-cF2" id="DCh-Vx-r9C"/>
+            </connections>
+            <point key="canvasLocation" x="26.086956521739133" y="57.924107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="companyLogo" width="250" height="250"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

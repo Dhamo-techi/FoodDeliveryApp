@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaymentType" rowHeight="189" id="KGk-i7-Jjw" customClass="PaymentType" customModule="DeliveryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="408" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0J1-cl-0sb">
+                        <rect key="frame" x="0.0" y="0.0" width="408" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gpay" translatesAutoresizingMaskIntoConstraints="NO" id="hRX-Bx-42V">
+                                <rect key="frame" x="20" y="15" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="F1z-uX-fl5"/>
+                                    <constraint firstAttribute="height" constant="40" id="hfM-WR-fEC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G-Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azt-zB-wYh">
+                                <rect key="frame" x="70" y="5" width="258" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77m-n5-DMV">
+                                <rect key="frame" x="338" y="7.6666666666666643" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="gKp-f8-K0m"/>
+                                    <constraint firstAttribute="width" constant="55" id="pM1-EU-g0e"/>
+                                </constraints>
+                                <color key="tintColor" red="0.97906917329999998" green="0.41580861810000003" blue="0.063192740080000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="heavy"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Azt-zB-wYh" firstAttribute="leading" secondItem="hRX-Bx-42V" secondAttribute="trailing" constant="10" id="GHV-na-d21"/>
+                            <constraint firstItem="hRX-Bx-42V" firstAttribute="centerY" secondItem="0J1-cl-0sb" secondAttribute="centerY" id="Idn-YR-j6l"/>
+                            <constraint firstItem="Azt-zB-wYh" firstAttribute="top" secondItem="0J1-cl-0sb" secondAttribute="top" constant="5" id="Tep-P3-AOz"/>
+                            <constraint firstItem="77m-n5-DMV" firstAttribute="centerY" secondItem="0J1-cl-0sb" secondAttribute="centerY" id="adT-fp-mf4"/>
+                            <constraint firstItem="hRX-Bx-42V" firstAttribute="leading" secondItem="0J1-cl-0sb" secondAttribute="leading" constant="20" id="sAG-22-TBS"/>
+                            <constraint firstItem="77m-n5-DMV" firstAttribute="leading" secondItem="Azt-zB-wYh" secondAttribute="trailing" constant="10" id="wkZ-dB-Vmr"/>
+                            <constraint firstAttribute="bottom" secondItem="Azt-zB-wYh" secondAttribute="bottom" constant="5" id="yK4-99-bwD"/>
+                            <constraint firstAttribute="trailing" secondItem="77m-n5-DMV" secondAttribute="trailing" constant="15" id="zqf-K9-7k1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0J1-cl-0sb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="N1O-3n-ffI"/>
+                    <constraint firstAttribute="trailing" secondItem="0J1-cl-0sb" secondAttribute="trailing" id="aN3-UE-Fv3"/>
+                    <constraint firstItem="0J1-cl-0sb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bWz-Bv-fPj"/>
+                    <constraint firstAttribute="bottom" secondItem="0J1-cl-0sb" secondAttribute="bottom" id="xFx-xZ-RB5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="paymentLogoImgvw" destination="hRX-Bx-42V" id="Tni-lJ-LFv"/>
+                <outlet property="paymentNameLbl" destination="Azt-zB-wYh" id="Fmh-Mz-pP3"/>
+                <outlet property="selectionBtn" destination="77m-n5-DMV" id="LcJ-aT-3od"/>
+            </connections>
+            <point key="canvasLocation" x="83.07692307692308" y="-22.037914691943126"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Gpay" width="360" height="303"/>
+        <image name="circle" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

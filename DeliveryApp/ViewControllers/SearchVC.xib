@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchVC" customModule="DeliveryApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backBtn" destination="0uL-MB-4U9" id="M1W-SO-86I"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQD-E4-snN">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uL-MB-4U9">
+                            <rect key="frame" x="10" y="5" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="6WU-Pk-dCw"/>
+                                <constraint firstAttribute="width" constant="50" id="L1O-kB-SjY"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="chevron.backward" catalog="system">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15" scale="large" weight="bold"/>
+                            </state>
+                            <connections>
+                                <action selector="backBtnTapped:" destination="-1" eventType="touchUpInside" id="aKM-jD-O1h"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5o-3s-pPk">
+                            <rect key="frame" x="70" y="15.5" width="79" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="29" id="Utw-qG-dSz"/>
+                                <constraint firstAttribute="width" constant="79" id="n4y-6Z-VqS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvL-mv-LQx">
+                            <rect key="frame" x="359" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="9bu-I5-XVo"/>
+                                <constraint firstAttribute="height" constant="40" id="IfZ-0O-Y3i"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="cube.box" catalog="system">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15" scale="large" weight="bold"/>
+                            </state>
+                            <connections>
+                                <action selector="notificationBtnTapped:" destination="-1" eventType="touchUpInside" id="mAI-Fa-ihK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OL-nr-YB3">
+                            <rect key="frame" x="318" y="10" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="7X9-GX-bGY"/>
+                                <constraint firstAttribute="height" constant="40" id="yls-i1-ytk"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="magnifyingglass" catalog="system">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="16" scale="large" weight="bold"/>
+                            </state>
+                            <connections>
+                                <action selector="searchBtnTapped:" destination="-1" eventType="touchUpInside" id="rbY-kA-Usc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="0uL-MB-4U9" firstAttribute="leading" secondItem="fQD-E4-snN" secondAttribute="leading" constant="10" id="0be-48-lxP"/>
+                        <constraint firstItem="0uL-MB-4U9" firstAttribute="centerY" secondItem="fQD-E4-snN" secondAttribute="centerY" id="ECg-EH-gOh"/>
+                        <constraint firstAttribute="height" constant="60" id="I7p-Wj-wLx"/>
+                        <constraint firstItem="UvL-mv-LQx" firstAttribute="centerY" secondItem="fQD-E4-snN" secondAttribute="centerY" id="Kea-nI-upc"/>
+                        <constraint firstAttribute="trailing" secondItem="UvL-mv-LQx" secondAttribute="trailing" constant="15" id="O0e-LI-HlQ"/>
+                        <constraint firstItem="UvL-mv-LQx" firstAttribute="leading" secondItem="0OL-nr-YB3" secondAttribute="trailing" constant="1" id="YfS-YE-aAg"/>
+                        <constraint firstItem="x5o-3s-pPk" firstAttribute="centerY" secondItem="fQD-E4-snN" secondAttribute="centerY" id="pj5-p0-1Mh"/>
+                        <constraint firstItem="x5o-3s-pPk" firstAttribute="leading" secondItem="0uL-MB-4U9" secondAttribute="trailing" constant="10" id="xDr-Ca-94B"/>
+                        <constraint firstItem="0OL-nr-YB3" firstAttribute="centerY" secondItem="fQD-E4-snN" secondAttribute="centerY" id="ydR-U5-tfC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fQD-E4-snN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kHp-6g-vF5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fQD-E4-snN" secondAttribute="trailing" id="pyl-oI-njf"/>
+                <constraint firstItem="fQD-E4-snN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qOM-24-IpU"/>
+            </constraints>
+            <point key="canvasLocation" x="-172" y="-83"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="cube.box" catalog="system" width="128" height="124"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
